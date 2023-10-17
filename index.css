@@ -116,8 +116,9 @@ section#hero2{
 }
 section#hero2 .swiper {
   transform: rotate(-4deg);
-  width: 90%;
+  width: 95%;
   height: 60%;
+  overflow: hidden;
 }
 .swiper:hover{
   cursor: pointer;
@@ -139,7 +140,7 @@ section#hero2 .swiper {
   position: absolute;
   top: 25px;
   width: 83%;
-  height: 80%;
+  height: 100%;
 }
 .innerCard img{
   height: 100%;
@@ -305,7 +306,7 @@ section#hero4 .swiper-slide img {
   outline-color: lightcoral;
 }
 
-@media(max-width: 500px){
+@media(max-width: 500px){ 
     section#hero1{
         height: 100vh;
         width: 100%;
@@ -315,7 +316,7 @@ section#hero4 .swiper-slide img {
         flex-direction: column;
     }
     #img1, #img2{
-      width: 200px;
+      width: 50%;
       height: 75px;
       object-fit: contain;
     }
@@ -361,6 +362,9 @@ section#hero4 .swiper-slide img {
       margin-top: unset;
       width: 85%;
     }
+    section#hero2 .swiper{
+      width: 90%;
+    }
     section#hero2 .swiper-wrapper{
       height: 90%;
     }
@@ -380,8 +384,8 @@ section#hero4 .swiper-slide img {
       object-fit: contain;
     }
     section#hero2 .innerCard{
-      top: 20px;
       position: unset;
+      top: 20px;
     }
     /* SECTION 3 */
     section#hero3{
@@ -412,5 +416,8 @@ section#hero4 .swiper-slide img {
     }
     section#hero4{
       height: 600px;
+    }
+    #our_moment{
+      width: 80%;
     }
 }
