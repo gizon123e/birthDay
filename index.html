@@ -316,8 +316,6 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> 
   <!-- Initialize Swiper -->
   <script>
-    let initialSlides = 1; // Nilai default jika lebar layar lebih kecil atau sama dengan 500px
-
     if (window.innerWidth > 500) {
       const swiper1 = new Swiper(".mySwiper1", {
         slidesPerView: 3,
@@ -329,12 +327,18 @@
       });
     }else{
       const swiper1 = new Swiper(".mySwiper1", {
-        slidesPerView: 1,
-        loop: true,
-        spaceBetween: 30,
+        // slidesPerView: 1,
+        // loop: true,
+        // spaceBetween: 30,
+        // pagination: {
+        //   el: ".swiper-pagination",
+        //   clickable: true,
+        // },
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
         pagination: {
           el: ".swiper-pagination",
-          clickable: true,
         },
       });
     }
