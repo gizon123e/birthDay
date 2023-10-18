@@ -319,6 +319,7 @@
     if (window.innerWidth > 500) {
       const swiper1 = new Swiper(".mySwiper1", {
         slidesPerView: 3,
+        loop: true,
         spaceBetween: 30,
         pagination: {
           el: ".swiper-pagination",
@@ -327,13 +328,7 @@
       });
     }else{
       const swiper1 = new Swiper(".mySwiper1", {
-        // slidesPerView: 1,
-        // loop: true,
-        // spaceBetween: 30,
-        // pagination: {
-        //   el: ".swiper-pagination",
-        //   clickable: true,
-        // },
+        loop: true,
         grabCursor: true,
         centeredSlides: true,
         slidesPerView: "auto",
@@ -342,8 +337,6 @@
         },
       });
     }
-  </script>
-  <script>
     var swiper2 = new Swiper(".mySwiper2", {
       effect: "coverflow",
       grabCursor: true,
@@ -360,8 +353,6 @@
         el: ".swiper-pagination",
       },
     });
-  </script>
-  <script>
     var swiper = new Swiper(".mySwiperText", {
       navigation: {
         nextEl: ".swiper-button-next",
