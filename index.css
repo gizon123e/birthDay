@@ -137,7 +137,6 @@ section#hero2 .swiper {
     z-index: 2;
 }
 .innerCard{
-  border: 2px solid black;
   position: absolute;
   top: 0;
   width: 95%;
