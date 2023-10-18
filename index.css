@@ -382,7 +382,7 @@ section#hero4 .swiper-slide img {
       object-fit: contain;
     }
     section#hero2 .innerCard{
-      width: 80%;
+      width: 100%;
       height: 90%;
       position: unset;
     }
